@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 
 public class main {
 
@@ -10,6 +12,15 @@ public class main {
 		System.out.println(Fraction.equals(f1, f3));
 		System.out.println(Fraction.equals(f1, f2));
 		System.out.println(f1.getFloat());
+		System.out.println(f1.compareTo(f2));
+		List<Fraction> list = new ArrayList<Fraction>();
+		list.add(f1);
+		list.add(f2);
+		list.add(f3);
+		list.sort(null);
+		System.out.println("----- Sort -----");
+		for(Fraction f : list)
+			System.out.println(f.getFloat());
 
 	}
 

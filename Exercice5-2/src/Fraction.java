@@ -73,11 +73,11 @@ public class Fraction implements Comparable{
 		// TODO Auto-generated method
 		Fraction frac = (Fraction)o;
 		if(frac.getFloat()<getFloat())
-			return -1;
+			return 1;
 		else if(frac.getFloat()==getFloat())
 			return 0;
 		else
-			return 1;
+			return -1;
 	}
 	
 	
