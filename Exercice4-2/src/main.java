@@ -14,7 +14,6 @@ public class main {
 		if(c3.seConnecter(serv))
 			serv.connecter(c3);
 		c3.envoyer("Hello world !");
-
 	}
 
 }
